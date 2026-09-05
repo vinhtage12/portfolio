@@ -1,7 +1,7 @@
+import { Container } from "@components/Container";
+import { SectionHeading } from "@components/SectionHeading";
+import { Badge } from "@ui/badge";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { SectionHeading } from "@/components/SectionHeading";
-import { Badge } from "@/components/ui/badge";
 
 export async function About() {
   const t = await getTranslations("about");

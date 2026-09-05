@@ -1,15 +1,10 @@
 "use client";
 
+import { MenuIcon } from "@components/icons";
+import { cn } from "@lib/cn";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@ui/sheet";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { MenuIcon } from "@/components/icons";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { cn } from "@/lib/cn";
 
 export function MobileNav({
   navItems,

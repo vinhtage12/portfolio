@@ -1,4 +1,4 @@
-import type { EducationEntry } from "@/types/content";
+import type { EducationEntry } from "@type/content";
 
 export const educationEntries: EducationEntry[] = [
   {
@@ -7,5 +7,6 @@ export const educationEntries: EducationEntry[] = [
     degreeKey: "bachelorComputerEngineering",
     startYear: 2021,
     endYear: 2025,
+    logoPublicId: "porfolio/01_logobachkhoatoi_bajnvd.png",
   },
 ];

@@ -1,7 +1,7 @@
+import { Container } from "@components/Container";
+import { LinkedinIcon, MailIcon } from "@components/icons";
+import { site } from "@data/site";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { LinkedinIcon, MailIcon } from "@/components/icons";
-import { site } from "@/data/site";
 
 export async function Footer() {
   const t = await getTranslations("footer");

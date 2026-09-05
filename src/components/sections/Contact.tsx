@@ -1,10 +1,10 @@
+import { Container } from "@components/Container";
+import { CopyEmailButton } from "@components/CopyEmailButton";
+import { MapPinIcon, PhoneIcon } from "@components/icons";
+import { SectionHeading } from "@components/SectionHeading";
+import { site } from "@data/site";
+import { Button } from "@ui/button";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { CopyEmailButton } from "@/components/CopyEmailButton";
-import { MapPinIcon, PhoneIcon } from "@/components/icons";
-import { SectionHeading } from "@/components/SectionHeading";
-import { Button } from "@/components/ui/button";
-import { site } from "@/data/site";
 
 export async function Contact() {
   const t = await getTranslations("contact");

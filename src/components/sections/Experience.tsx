@@ -1,8 +1,8 @@
+import { Container } from "@components/Container";
+import { SectionHeading } from "@components/SectionHeading";
+import { ExperienceItem } from "@components/sections/ExperienceItem";
+import { experienceProjects } from "@data/experience";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { SectionHeading } from "@/components/SectionHeading";
-import { ExperienceItem } from "@/components/sections/ExperienceItem";
-import { experienceProjects } from "@/data/experience";
 
 export async function Experience() {
   const t = await getTranslations("experience");
@@ -18,6 +18,10 @@ export async function Experience() {
           title={t("title")}
           description={t("description")}
         />
+
+        <p className="mt-6 max-w-3xl text-sm leading-6 text-muted-foreground">
+          {t("roleIntro")}
+        </p>
 
         <div className="mt-10 flex flex-col gap-6">
           {experienceProjects.map((project, index) => (

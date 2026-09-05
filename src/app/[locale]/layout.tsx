@@ -1,13 +1,20 @@
+import { FloatingActions } from "@components/FloatingActions";
+import { Footer } from "@components/Footer";
+import { Header } from "@components/Header";
+import { ParticlesBackground } from "@components/ParticlesBackground";
+import { PersonJsonLd } from "@components/PersonJsonLd";
+import { ThemeProvider } from "@components/ThemeProvider";
+import { site } from "@data/site";
+import { routing } from "@i18n/routing";
+import { avatarUrl } from "@lib/cloudinary";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { routing } from "@/i18n/routing";
-import "@/app/globals.css";
+import { getTranslations } from "next-intl/server";
+import "@app/globals.css";
+
+const OG_LOCALE: Record<string, string> = { en: "en_US", vi: "vi_VN" };
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,9 +50,52 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
 
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${site.url}/${l}`]),
+  );
+  const ogImage = avatarUrl("f_auto,q_auto,c_fill,g_face,w_1200,h_630");
+
   return {
+    metadataBase: new URL(site.url),
     title: t("title"),
     description: t("description"),
+    keywords: [...site.keywords],
+    authors: [{ name: site.name, url: site.links.linkedin }],
+    creator: site.name,
+    alternates: {
+      canonical: `${site.url}/${locale}`,
+      languages,
+    },
+    openGraph: {
+      type: "profile",
+      firstName: site.name.split(" ")[0],
+      lastName: site.name.split(" ").slice(1).join(" "),
+      title: t("title"),
+      description: t("description"),
+      url: `${site.url}/${locale}`,
+      siteName: site.name,
+      locale: OG_LOCALE[locale] ?? "en_US",
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => OG_LOCALE[l] ?? l),
+      images: [{ url: ogImage, width: 1200, height: 630, alt: site.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [ogImage],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    icons: {
+      icon: avatarUrl("f_auto,q_auto,c_fill,g_face,w_64,h_64,r_max"),
+      shortcut: avatarUrl("f_auto,q_auto,c_fill,g_face,w_64,h_64,r_max"),
+      apple: avatarUrl("f_auto,q_auto,c_fill,g_face,w_180,h_180,r_max"),
+    },
   };
 }
 
@@ -58,8 +108,6 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  setRequestLocale(locale);
 
   return (
     <html
@@ -76,11 +124,14 @@ export default async function LocaleLayout({
         className="flex min-h-screen flex-col antialiased"
         suppressHydrationWarning
       >
+        <PersonJsonLd locale={locale} />
         <NextIntlClientProvider>
           <ThemeProvider>
+            <ParticlesBackground />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <FloatingActions />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

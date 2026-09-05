@@ -1,7 +1,7 @@
 "use client";
 
+import { cn } from "@lib/cn";
 import { Tooltip as RadixTooltip } from "radix-ui";
-import { cn } from "@/lib/cn";
 
 export const TooltipProvider = RadixTooltip.Provider;
 export const Tooltip = RadixTooltip.Root;

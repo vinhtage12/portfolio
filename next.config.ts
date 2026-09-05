@@ -4,6 +4,15 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/dnmn9nbil/**",
+      },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

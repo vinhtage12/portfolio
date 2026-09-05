@@ -1,7 +1,7 @@
+import { Container } from "@components/Container";
+import { Link } from "@i18n/navigation";
+import { Button } from "@ui/button";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
 
 export default async function LocaleNotFound() {
   const t = await getTranslations("notFound");
