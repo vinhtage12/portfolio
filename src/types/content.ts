@@ -18,7 +18,7 @@ export interface ExperienceProject {
   dateRange: { start: string; end: string | "present" };
   techTags: string[];
   metrics: ExperienceMetric[];
-  imagePlaceholderCount: number;
+  images: string[];
 }
 
 export type CategoryIcon =

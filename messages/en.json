@@ -50,7 +50,7 @@
     "present": "Present",
     "companyTagline": "Logistics & SaaS Solutions",
     "roleIntro": "As the sole frontend engineer responsible for developing the company's three core products — serving 200+ internal users — I owned everything from screen architecture design and component development to performance optimization for large-scale data systems.",
-    "demoImageLabel": "Demo screenshot — coming soon",
+    "screenshotAlt": "Screenshot {index} of {title}",
     "problemLabel": "Problem",
     "solutionLabel": "Solution",
     "resultLabel": "Result",

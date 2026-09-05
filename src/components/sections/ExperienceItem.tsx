@@ -1,10 +1,11 @@
-import { ImagePlaceholder } from "@components/ImagePlaceholder";
 import { MetricStat } from "@components/MetricStat";
 import { Reveal } from "@components/Reveal";
 import { TechBadge } from "@components/TechBadge";
 import { companies } from "@data/experience";
+import { cloudinaryUrl } from "@lib/cloudinary";
 import type { ExperienceProject } from "@type/content";
 import { Card } from "@ui/card";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 export async function ExperienceItem({
@@ -24,16 +25,23 @@ export async function ExperienceItem({
       <Card className="overflow-hidden p-0 sm:p-0">
         <div className="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <div className="flex flex-col gap-3 border-border border-b bg-brand-100/40 p-6 dark:bg-brand-900/10 sm:p-8 lg:border-r lg:border-b-0">
-            {Array.from({ length: project.imagePlaceholderCount }).map(
-              (_, i) => (
-                <ImagePlaceholder
-                  // biome-ignore lint/suspicious/noArrayIndexKey: static placeholder count, order never changes
-                  key={i}
-                  label={tExperience("demoImageLabel")}
-                  aspectRatio="video"
+            {project.images.map((publicId, i) => (
+              <div
+                key={publicId}
+                className="relative aspect-video overflow-hidden rounded-2xl border border-border"
+              >
+                <Image
+                  src={cloudinaryUrl(publicId, "f_auto,q_auto,c_fill,w_960")}
+                  alt={tExperience("screenshotAlt", {
+                    title: t("title"),
+                    index: i + 1,
+                  })}
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 90vw"
+                  className="object-cover"
                 />
-              ),
-            )}
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col gap-6 p-6 sm:p-8">

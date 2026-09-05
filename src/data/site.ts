@@ -19,7 +19,7 @@ export const site = {
   ],
   links: {
     linkedin: "https://linkedin.com/in/nguyentuanvinh1202",
-    cv: "/cv/nguyen-tuan-vinh-cv-en.pdf",
+    cv: "https://drive.google.com/uc?export=download&id=1vpiBVKnJkXkegrDbxrAdNysIMU0Zz8cX",
   },
   navItems: [
     { id: "about", href: "#about" },

@@ -50,7 +50,7 @@
     "present": "Hiện tại",
     "companyTagline": "Giải pháp Logistics & SaaS",
     "roleIntro": "Là Frontend Engineer duy nhất phụ trách phát triển ba sản phẩm lõi của công ty, phục vụ hơn 200 người dùng nội bộ, tôi chịu trách nhiệm từ thiết kế kiến trúc màn hình, xây dựng component, đến tối ưu hiệu năng cho các hệ thống xử lý dữ liệu lớn.",
-    "demoImageLabel": "Ảnh demo — sẽ cập nhật sau",
+    "screenshotAlt": "Ảnh chụp màn hình {index} của {title}",
     "problemLabel": "Bài toán",
     "solutionLabel": "Giải pháp",
     "resultLabel": "Kết quả",

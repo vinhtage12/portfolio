@@ -18,7 +18,10 @@ export const experienceProjects: ExperienceProject[] = [
       { icon: "list-checks", value: "50+", labelKey: "fields" },
       { icon: "clock", value: "1 min", labelKey: "accuracy" },
     ],
-    imagePlaceholderCount: 2,
+    images: [
+      "porfolio/Screenshot_From_2026-09-05_18-29-10_vaznh8.png",
+      "porfolio/Screenshot_From_2026-09-05_18-30-15_nhxqzv.png",
+    ],
   },
   {
     id: "fms",
@@ -30,7 +33,10 @@ export const experienceProjects: ExperienceProject[] = [
       { icon: "database", value: "15,000+", labelKey: "records" },
       { icon: "list-checks", value: "70+", labelKey: "fields" },
     ],
-    imagePlaceholderCount: 2,
+    images: [
+      "porfolio/Screenshot_From_2026-09-05_18-25-50_nzayhm.png",
+      "porfolio/Screenshot_From_2026-09-05_18-26-14_wleda0.png",
+    ],
   },
   {
     id: "workspace",
@@ -41,7 +47,7 @@ export const experienceProjects: ExperienceProject[] = [
       { icon: "layers", value: "Multi-tenant", labelKey: "architecture" },
       { icon: "workflow", value: "CI/CD", labelKey: "automation" },
     ],
-    imagePlaceholderCount: 1,
+    images: ["porfolio/Screenshot_From_2026-09-05_18-38-58_nap9sz.png"],
   },
 ];
 
