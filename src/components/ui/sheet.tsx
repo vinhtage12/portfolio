@@ -1,8 +1,8 @@
 "use client";
 
+import { CloseIcon } from "@components/icons";
+import { cn } from "@lib/cn";
 import { Dialog as RadixDialog } from "radix-ui";
-import { CloseIcon } from "@/components/icons";
-import { cn } from "@/lib/cn";
 
 export const Sheet = RadixDialog.Root;
 export const SheetTrigger = RadixDialog.Trigger;

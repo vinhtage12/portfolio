@@ -1,9 +1,9 @@
+import { Avatar } from "@components/Avatar";
+import { Container } from "@components/Container";
+import { ArrowRightIcon } from "@components/icons";
+import { site } from "@data/site";
+import { Button } from "@ui/button";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { ArrowRightIcon } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { site } from "@/data/site";
 
 export async function Hero() {
   const t = await getTranslations("hero");
@@ -12,7 +12,7 @@ export async function Hero() {
     <section className="relative overflow-hidden pt-16">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-brand-100 via-background to-background dark:from-brand-900/40 dark:via-background dark:to-background"
+        className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-brand-100 via-background to-background dark:from-brand-900/40 dark:via-background dark:to-background"
       />
 
       <Container className="grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:py-32">
@@ -43,10 +43,10 @@ export async function Hero() {
           </div>
         </div>
 
-        <ImagePlaceholder
-          label={t("avatarAlt")}
-          aspectRatio="square"
-          className="mx-auto w-full max-w-sm rounded-3xl lg:max-w-none"
+        <Avatar
+          alt={t("avatarAlt")}
+          priority
+          className="mx-auto w-full max-w-sm lg:max-w-none"
         />
       </Container>
     </section>

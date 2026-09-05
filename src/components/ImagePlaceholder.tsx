@@ -1,5 +1,5 @@
-import { ImageIcon } from "@/components/icons";
-import { cn } from "@/lib/cn";
+import { ImageIcon } from "@components/icons";
+import { cn } from "@lib/cn";
 
 const aspectRatioClasses = {
   square: "aspect-square",

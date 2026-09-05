@@ -1,15 +1,15 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { CheckIcon, MailIcon } from "@/components/icons";
+import { CheckIcon, MailIcon } from "@components/icons";
+import { cn } from "@lib/cn";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/cn";
+} from "@ui/tooltip";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export function CopyEmailButton({ email }: { email: string }) {
   const [copied, setCopied] = useState(false);

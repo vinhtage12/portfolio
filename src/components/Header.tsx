@@ -1,10 +1,10 @@
+import { Container } from "@components/Container";
+import { LocaleSwitcher } from "@components/LocaleSwitcher";
+import { MobileNav } from "@components/MobileNav";
+import { ThemeToggle } from "@components/ThemeToggle";
+import { site } from "@data/site";
+import { Link } from "@i18n/navigation";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { LocaleSwitcher } from "@/components/LocaleSwitcher";
-import { MobileNav } from "@/components/MobileNav";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { site } from "@/data/site";
-import { Link } from "@/i18n/navigation";
 
 export async function Header() {
   const t = await getTranslations("nav");

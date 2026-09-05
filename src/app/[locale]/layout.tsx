@@ -1,13 +1,14 @@
+import { Footer } from "@components/Footer";
+import { Header } from "@components/Header";
+import { ThemeProvider } from "@components/ThemeProvider";
+import { routing } from "@i18n/routing";
+import { avatarUrl } from "@lib/cloudinary";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { routing } from "@/i18n/routing";
-import "@/app/globals.css";
+import "@app/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,11 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    icons: {
+      icon: avatarUrl("f_auto,q_auto,c_fill,g_face,w_64,h_64,r_max"),
+      shortcut: avatarUrl("f_auto,q_auto,c_fill,g_face,w_64,h_64,r_max"),
+      apple: avatarUrl("f_auto,q_auto,c_fill,g_face,w_180,h_180,r_max"),
+    },
   };
 }
 

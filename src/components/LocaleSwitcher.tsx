@@ -1,10 +1,10 @@
 "use client";
 
+import { GlobeIcon } from "@components/icons";
+import { usePathname, useRouter } from "@i18n/navigation";
+import { routing } from "@i18n/routing";
+import { cn } from "@lib/cn";
 import { useLocale, useTranslations } from "next-intl";
-import { GlobeIcon } from "@/components/icons";
-import { usePathname, useRouter } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
-import { cn } from "@/lib/cn";
 
 export function LocaleSwitcher({ className }: { className?: string }) {
   const locale = useLocale();

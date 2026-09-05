@@ -20,6 +20,18 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@app": ["./src/app"],
+      "@app/*": ["./src/app/*"],
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@data": ["./src/data"],
+      "@data/*": ["./src/data/*"],
+      "@i18n": ["./src/i18n"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@lib": ["./src/lib"],
+      "@lib/*": ["./src/lib/*"],
+      "@type": ["./src/types"],
+      "@type/*": ["./src/types/*"],
       "@ui": ["./src/components/ui"],
       "@ui/*": ["./src/components/ui/*"]
     }

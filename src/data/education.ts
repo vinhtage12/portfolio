@@ -1,4 +1,4 @@
-import type { EducationEntry } from "@/types/content";
+import type { EducationEntry } from "@type/content";
 
 export const educationEntries: EducationEntry[] = [
   {

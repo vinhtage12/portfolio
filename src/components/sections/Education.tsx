@@ -1,9 +1,9 @@
+import { Container } from "@components/Container";
+import { Reveal } from "@components/Reveal";
+import { SectionHeading } from "@components/SectionHeading";
+import { educationEntries } from "@data/education";
+import { Card, CardDescription, CardTitle } from "@ui/card";
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import { educationEntries } from "@/data/education";
 
 export async function Education() {
   const t = await getTranslations("education");

@@ -41,49 +41,109 @@
     "description": "Nơi tôi đã làm việc và những gì tôi đã xây dựng.",
     "present": "Hiện tại",
     "companyTagline": "Giải pháp Logistics & SaaS",
-    "usersLabel": "người dùng nội bộ",
-    "recordsLabel": "bản ghi được xử lý",
+    "roleIntro": "Là Frontend Engineer duy nhất phụ trách phát triển ba sản phẩm lõi của công ty, phục vụ hơn 200 người dùng nội bộ, tôi chịu trách nhiệm từ thiết kế kiến trúc màn hình, xây dựng component, đến tối ưu hiệu năng cho các hệ thống xử lý dữ liệu lớn.",
+    "demoImageLabel": "Ảnh demo — sẽ cập nhật sau",
+    "problemLabel": "Bài toán",
+    "solutionLabel": "Giải pháp",
+    "resultLabel": "Kết quả",
+    "metrics": {
+      "records": "Bản ghi xử lý",
+      "fields": "Trường dữ liệu",
+      "accuracy": "Độ chính xác timeline",
+      "users": "Người dùng nội bộ",
+      "architecture": "Kiến trúc",
+      "automation": "Triển khai"
+    },
     "tms-container": {
       "title": "Apollogix TMS Container",
       "subtitle": "Hệ thống quản lý vận tải doanh nghiệp",
-      "achievements": [
-        "Thiết kế giao diện timeline vận tải hiển thị các chuyến đi hằng ngày với độ chính xác đến từng phút, giúp người vận hành theo dõi tài xế, container, phương tiện, tuyến đường và thời gian chờ trên cùng một màn hình.",
-        "Xây dựng timeline bằng các tính năng của AG Grid như pinned columns, custom cell renderers, column groups, column spans và value getters.",
-        "Phát triển form tạo chuyến vận tải với hơn 50 trường dữ liệu động bằng React Hook Form và Yup.",
-        "Triển khai bảng AG Grid xử lý hơn 15.000 bản ghi tuyến đường với infinite scrolling, lọc phía server, phân trang và xuất Excel.",
-        "Quản lý server state với TanStack Query, sử dụng caching, query persistence, infinite queries và mutation invalidation."
-      ]
+      "problem": "Đội vận hành cần theo dõi đồng thời hàng trăm chuyến vận tải diễn ra trong ngày — bao gồm tài xế, container, phương tiện, tuyến đường và thời gian rảnh — nhưng dữ liệu trước đó bị phân mảnh trên nhiều màn hình, gây khó khăn cho việc điều phối theo thời gian thực.",
+      "solution": [
+        "Thiết kế và xây dựng giao diện timeline vận tải hợp nhất, hiển thị chính xác đến từng phút trên một màn hình duy nhất.",
+        "Tận dụng các tính năng nâng cao của AG Grid: pinned columns, custom cell renderers, column groups, column spans và value getters để trình bày dữ liệu đa chiều.",
+        "Xây dựng form nghiệp vụ vận tải với hơn 50 trường dữ liệu động bằng React Hook Form và Yup, đảm bảo validate chính xác theo từng loại nghiệp vụ.",
+        "Triển khai bảng dữ liệu xử lý hơn 15.000 bản ghi tuyến đường với infinite scrolling, lọc phía server, phân trang và xuất Excel.",
+        "Quản lý toàn bộ server state bằng TanStack Query: caching, query persistence, infinite queries và mutation invalidation, giúp giảm đáng kể số lần gọi API dư thừa."
+      ],
+      "result": "Đội vận hành có thể theo dõi và điều phối toàn bộ chuyến vận tải trong ngày trên một màn hình duy nhất thay vì nhiều hệ thống rời rạc, rút ngắn thời gian ra quyết định điều phối."
     },
     "fms": {
       "title": "Apollogix FMS",
       "subtitle": "Nền tảng giao nhận vận tải & kiểm soát chi phí",
-      "achievements": [
-        "Phát triển các tính năng logistics được sử dụng bởi hơn 200 người dùng nội bộ, xử lý hơn 15.000 bản ghi chi phí vận chuyển.",
-        "Cải thiện độ mượt của trang bằng cách giảm re-render không cần thiết và tối ưu việc fetch dữ liệu.",
-        "Xây dựng form vận đơn và gom hàng với hơn 70 trường dữ liệu cùng logic validate phức tạp.",
-        "Phát triển các bảng AG Grid có thể chỉnh sửa trực tiếp cho các nghiệp vụ logistics quy mô lớn."
-      ]
+      "problem": "Nền tảng cần quản lý hơn 15.000 bản ghi chi phí vận chuyển và các nghiệp vụ gộp lô hàng phức tạp, trong khi hiệu năng trang bị ảnh hưởng do re-render không cần thiết.",
+      "solution": [
+        "Phát triển các tính năng logistics lõi phục vụ hơn 200 người dùng nội bộ, xử lý hơn 15.000 bản ghi chi phí vận chuyển.",
+        "Phân tích và loại bỏ các nguyên nhân gây re-render thừa, tối ưu hóa chiến lược lấy dữ liệu để cải thiện độ phản hồi của trang.",
+        "Xây dựng form lô hàng và gộp hàng với hơn 70 trường dữ liệu cùng logic validate nghiệp vụ phức tạp.",
+        "Phát triển các bảng AG Grid có thể chỉnh sửa trực tiếp phục vụ vận hành logistics quy mô lớn."
+      ],
+      "result": "Cải thiện rõ rệt độ phản hồi của trang trong các thao tác xử lý dữ liệu lớn, giúp nhân viên nghiệp vụ thao tác nhanh và chính xác hơn trên các đơn hàng có khối lượng dữ liệu cao."
     },
     "workspace": {
       "title": "Apollogix Workspace",
       "subtitle": "Nền tảng B2B Multi-Tenant SaaS",
-      "achievements": [
-        "Xây dựng nền tảng frontend từ khâu khởi tạo dự án đến khi đưa vào production bằng Next.js.",
-        "Triển khai xác thực multi-tenant, quản lý workspace và quản lý nhà cung cấp.",
-        "Cấu hình Docker và GitHub Actions cho quy trình triển khai và phát hành."
-      ]
+      "problem": "Công ty cần một nền tảng SaaS dùng chung cho nhiều khách hàng doanh nghiệp (multi-tenant), được xây dựng từ đầu và có quy trình triển khai tự động.",
+      "solution": [
+        "Xây dựng toàn bộ nền tảng frontend từ giai đoạn khởi tạo dự án đến production bằng Next.js.",
+        "Triển khai cơ chế xác thực đa tenant, quản lý workspace và quản lý vendor.",
+        "Cấu hình Docker và GitHub Actions để tự động hóa quy trình triển khai và phát hành."
+      ],
+      "result": "Nền tảng vận hành ổn định với quy trình triển khai tự động, rút ngắn thời gian phát hành phiên bản mới và giảm thiểu lỗi thao tác thủ công."
     }
   },
   "skills": {
     "eyebrow": "Công cụ",
     "title": "Kỹ năng",
-    "description": "Công nghệ và phương pháp tôi sử dụng để xây dựng phần mềm dễ bảo trì.",
+    "description": "Bức tranh mức độ thành thạo trên toàn bộ công nghệ tôi sử dụng, đánh giá theo thang 1–5 dựa trên độ sâu áp dụng thực tế.",
+    "proficiencyLabel": "Mức độ thành thạo",
     "categories": {
-      "frontend": "Phát triển Frontend",
-      "ui-engineering": "UI Engineering",
-      "data": "Ứng dụng xử lý dữ liệu lớn",
-      "tooling": "Công cụ phát triển",
-      "professional": "Kỹ năng chuyên môn"
+      "frontend-core": {
+        "title": "Frontend Core",
+        "description": "Nền tảng công nghệ chính được sử dụng xuyên suốt các sản phẩm tại Apollogix."
+      },
+      "data-forms": {
+        "title": "Quản lý dữ liệu & Form",
+        "description": "Xây dựng form động quy mô lớn và quản lý server state hiện đại."
+      },
+      "ui-styling": {
+        "title": "UI & Styling",
+        "description": "Hệ thống component tái sử dụng, responsive."
+      },
+      "backend-infra": {
+        "title": "Backend & Hạ tầng",
+        "description": "Được khám phá qua các dự án cá nhân theo kiến trúc đa dịch vụ."
+      },
+      "tools-methods": {
+        "title": "Công cụ & Phương pháp",
+        "description": "Quy trình làm việc, phối hợp nhóm và giao tiếp."
+      }
+    },
+    "context": {
+      "react": "Công nghệ lõi trong toàn bộ dự án tại Apollogix và dự án cá nhân.",
+      "nextjs": "Xây dựng nền tảng Apollogix Workspace từ đầu đến production.",
+      "typescript": "Sử dụng xuyên suốt để đảm bảo an toàn kiểu dữ liệu trong hệ thống lớn.",
+      "aggrid": "Xử lý bảng dữ liệu 15.000+ bản ghi, custom cell renderer, column spans.",
+      "reacthookform": "Xây dựng form 50–70+ trường với logic validate phức tạp.",
+      "yup": "Kết hợp với React Hook Form để validate theo schema.",
+      "tanstackquery": "Caching, infinite queries, mutation invalidation cho server state.",
+      "axios": "Tích hợp API cho các hệ thống nghiệp vụ logistics.",
+      "tailwindcss": "Xây dựng giao diện responsive, tối ưu cho mobile/tablet.",
+      "materialui": "Component UI tái sử dụng cho hệ thống doanh nghiệp.",
+      "shadcnui": "Component UI tái sử dụng cho hệ thống doanh nghiệp.",
+      "radixui": "Component UI tái sử dụng cho hệ thống doanh nghiệp.",
+      "nodejs": "Xây dựng service backend cho dự án Truyện Mới Nhú.",
+      "nestjs": "Xây dựng service backend cho dự án Truyện Mới Nhú.",
+      "javaspringboot": "Phát triển module backend trong kiến trúc đa dịch vụ.",
+      "postgresql": "Thiết kế dữ liệu quan hệ và caching.",
+      "mongodb": "Thiết kế dữ liệu phi quan hệ và caching.",
+      "redis": "Thiết kế tầng caching.",
+      "docker": "Đóng gói, triển khai và cấu hình reverse proxy.",
+      "nginx": "Cấu hình reverse proxy cho dịch vụ tự triển khai.",
+      "githubactions": "Tự động hóa CI/CD cho triển khai và phát hành.",
+      "git": "Quản lý mã nguồn, quy trình review theo nhóm.",
+      "github": "Quản lý mã nguồn, quy trình review theo nhóm.",
+      "agilescrum": "Làm việc theo sprint trong môi trường doanh nghiệp.",
+      "technicalenglish": "TOEIC 785 (08/2022) — đọc hiểu tài liệu & giao tiếp kỹ thuật."
     }
   },
   "education": {
