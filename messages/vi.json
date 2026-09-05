@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "title": "Nguyễn Tuấn Vinh — Front End Developer",
+    "description": "Frontend Developer với hơn 2 năm kinh nghiệm xây dựng ứng dụng logistics doanh nghiệp và B2B SaaS với React, Next.js và TypeScript."
+  },
+  "nav": {
+    "about": "Giới thiệu",
+    "experience": "Kinh nghiệm",
+    "skills": "Kỹ năng",
+    "education": "Học vấn",
+    "contact": "Liên hệ",
+    "toggleMenu": "Đóng/mở menu",
+    "toggleTheme": "Đổi giao diện",
+    "switchLanguage": "Đổi ngôn ngữ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Nguyễn Tuấn Vinh",
+    "role": "Front End Developer (React)",
+    "tagline": "Tôi xây dựng các ứng dụng web doanh nghiệp nhanh, dễ mở rộng và thân thiện với người dùng bằng React, Next.js và TypeScript.",
+    "ctaPrimary": "Tải CV",
+    "ctaSecondary": "Liên hệ với tôi",
+    "avatarAlt": "Chân dung Nguyễn Tuấn Vinh",
+    "scrollHint": "Cuộn để khám phá"
+  },
+  "about": {
+    "eyebrow": "Về tôi",
+    "title": "Xây dựng phần mềm đáng tin cậy cho doanh nghiệp thực tế",
+    "body": "Frontend Developer với hơn 2 năm kinh nghiệm xây dựng ứng dụng logistics doanh nghiệp và B2B SaaS bằng React, Next.js và TypeScript. Đam mê xây dựng các ứng dụng web nhanh, dễ mở rộng và thân thiện với người dùng. Có kinh nghiệm xây dựng các component UI tái sử dụng, data grid hiệu năng cao và các form động quy mô lớn, đồng thời phối hợp chặt chẽ với các đội nhóm liên chức năng để phát triển phần mềm dễ bảo trì.",
+    "tags": [
+      "Kiến trúc Frontend",
+      "Enterprise SaaS",
+      "Tối ưu hiệu năng",
+      "Trực quan hóa dữ liệu",
+      "Form quy mô lớn"
+    ]
+  },
+  "experience": {
+    "eyebrow": "Sự nghiệp",
+    "title": "Kinh nghiệm làm việc",
+    "description": "Nơi tôi đã làm việc và những gì tôi đã xây dựng.",
+    "present": "Hiện tại",
+    "companyTagline": "Giải pháp Logistics & SaaS",
+    "usersLabel": "người dùng nội bộ",
+    "recordsLabel": "bản ghi được xử lý",
+    "tms-container": {
+      "title": "Apollogix TMS Container",
+      "subtitle": "Hệ thống quản lý vận tải doanh nghiệp",
+      "achievements": [
+        "Thiết kế giao diện timeline vận tải hiển thị các chuyến đi hằng ngày với độ chính xác đến từng phút, giúp người vận hành theo dõi tài xế, container, phương tiện, tuyến đường và thời gian chờ trên cùng một màn hình.",
+        "Xây dựng timeline bằng các tính năng của AG Grid như pinned columns, custom cell renderers, column groups, column spans và value getters.",
+        "Phát triển form tạo chuyến vận tải với hơn 50 trường dữ liệu động bằng React Hook Form và Yup.",
+        "Triển khai bảng AG Grid xử lý hơn 15.000 bản ghi tuyến đường với infinite scrolling, lọc phía server, phân trang và xuất Excel.",
+        "Quản lý server state với TanStack Query, sử dụng caching, query persistence, infinite queries và mutation invalidation."
+      ]
+    },
+    "fms": {
+      "title": "Apollogix FMS",
+      "subtitle": "Nền tảng giao nhận vận tải & kiểm soát chi phí",
+      "achievements": [
+        "Phát triển các tính năng logistics được sử dụng bởi hơn 200 người dùng nội bộ, xử lý hơn 15.000 bản ghi chi phí vận chuyển.",
+        "Cải thiện độ mượt của trang bằng cách giảm re-render không cần thiết và tối ưu việc fetch dữ liệu.",
+        "Xây dựng form vận đơn và gom hàng với hơn 70 trường dữ liệu cùng logic validate phức tạp.",
+        "Phát triển các bảng AG Grid có thể chỉnh sửa trực tiếp cho các nghiệp vụ logistics quy mô lớn."
+      ]
+    },
+    "workspace": {
+      "title": "Apollogix Workspace",
+      "subtitle": "Nền tảng B2B Multi-Tenant SaaS",
+      "achievements": [
+        "Xây dựng nền tảng frontend từ khâu khởi tạo dự án đến khi đưa vào production bằng Next.js.",
+        "Triển khai xác thực multi-tenant, quản lý workspace và quản lý nhà cung cấp.",
+        "Cấu hình Docker và GitHub Actions cho quy trình triển khai và phát hành."
+      ]
+    }
+  },
+  "skills": {
+    "eyebrow": "Công cụ",
+    "title": "Kỹ năng",
+    "description": "Công nghệ và phương pháp tôi sử dụng để xây dựng phần mềm dễ bảo trì.",
+    "categories": {
+      "frontend": "Phát triển Frontend",
+      "ui-engineering": "UI Engineering",
+      "data": "Ứng dụng xử lý dữ liệu lớn",
+      "tooling": "Công cụ phát triển",
+      "professional": "Kỹ năng chuyên môn"
+    }
+  },
+  "education": {
+    "eyebrow": "Học vấn",
+    "title": "Học vấn",
+    "degree": {
+      "bachelorComputerEngineering": "Cử nhân Kỹ thuật Máy tính"
+    }
+  },
+  "contact": {
+    "eyebrow": "Liên hệ",
+    "title": "Cùng hợp tác nhé",
+    "description": "Tôi luôn sẵn sàng đón nhận cơ hội mới và các dự án thú vị. Đừng ngần ngại liên hệ với tôi.",
+    "emailLabel": "Email",
+    "phoneLabel": "Điện thoại",
+    "locationLabel": "Địa điểm",
+    "copyEmail": "Sao chép địa chỉ email",
+    "emailCopied": "Đã sao chép!",
+    "ctaPrimary": "Gửi lời chào"
+  },
+  "footer": {
+    "rights": "Đã đăng ký bản quyền.",
+    "builtWith": "Được xây dựng với Next.js, Tailwind CSS & Radix UI"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",
+    "backHome": "Về trang chủ"
+  }
+}
