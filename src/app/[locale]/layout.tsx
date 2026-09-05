@@ -7,6 +7,7 @@ import { ThemeProvider } from "@components/ThemeProvider";
 import { site } from "@data/site";
 import { routing } from "@i18n/routing";
 import { avatarUrl } from "@lib/cloudinary";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -134,6 +135,7 @@ export default async function LocaleLayout({
             <FloatingActions />
           </ThemeProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
