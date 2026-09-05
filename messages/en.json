@@ -13,6 +13,14 @@
     "toggleTheme": "Toggle theme",
     "switchLanguage": "Switch language"
   },
+  "floatingActions": {
+    "openContact": "Open quick contact",
+    "closeContact": "Close quick contact",
+    "email": "Email me",
+    "phone": "Call me",
+    "linkedin": "Connect on LinkedIn",
+    "scrollTop": "Back to top"
+  },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Nguyen Tuan Vinh",

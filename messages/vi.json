@@ -13,6 +13,14 @@
     "toggleTheme": "Đổi giao diện",
     "switchLanguage": "Đổi ngôn ngữ"
   },
+  "floatingActions": {
+    "openContact": "Mở liên hệ nhanh",
+    "closeContact": "Đóng liên hệ nhanh",
+    "email": "Gửi email cho tôi",
+    "phone": "Gọi cho tôi",
+    "linkedin": "Kết nối trên LinkedIn",
+    "scrollTop": "Về đầu trang"
+  },
   "hero": {
     "greeting": "Xin chào, tôi là",
     "name": "Nguyễn Tuấn Vinh",

@@ -5,12 +5,8 @@ import { Education } from "@components/sections/Education";
 import { Experience } from "@components/sections/Experience";
 import { Hero } from "@components/sections/Hero";
 import { Skills } from "@components/sections/Skills";
-import { setRequestLocale } from "next-intl/server";
 
-export default async function HomePage({ params }: PageProps<"/[locale]">) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
+export default function HomePage() {
   return (
     <>
       <Hero />
