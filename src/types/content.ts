@@ -45,4 +45,5 @@ export interface EducationEntry {
   degreeKey: string;
   startYear: number;
   endYear: number;
+  logoPublicId?: string;
 }

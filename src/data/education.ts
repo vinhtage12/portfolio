@@ -7,5 +7,6 @@ export const educationEntries: EducationEntry[] = [
     degreeKey: "bachelorComputerEngineering",
     startYear: 2021,
     endYear: 2025,
+    logoPublicId: "porfolio/01_logobachkhoatoi_bajnvd.png",
   },
 ];

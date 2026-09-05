@@ -1,4 +1,4 @@
-const CLOUD_NAME = "dnmn9nbil";
+const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 const AVATAR_PUBLIC_ID = "porfolio/avatar_fon6o8.jpg";
 const EDUCATION_BACKGROUND_PUBLIC_ID =
   "porfolio/hoc-phi-bach-khoa-tphcm-thumb_jsgcah.jpg";
