@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "title": "Nguyen Tuan Vinh — Front End Developer",
+    "description": "Frontend Developer with 2+ years of experience building enterprise logistics and B2B SaaS applications with React, Next.js, and TypeScript."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Nguyen Tuan Vinh",
+    "role": "Front End Developer (React)",
+    "tagline": "I build fast, scalable, and user-friendly enterprise web applications with React, Next.js, and TypeScript.",
+    "ctaPrimary": "Download CV",
+    "ctaSecondary": "Get in touch",
+    "avatarAlt": "Portrait of Nguyen Tuan Vinh",
+    "scrollHint": "Scroll to explore"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Building reliable software for real businesses",
+    "body": "Frontend Developer with 2+ years of experience building enterprise logistics and B2B SaaS applications using React, Next.js, and TypeScript. Passionate about building fast, scalable, and user-friendly web applications. Skilled in building reusable UI components, high-performance data grids, and large dynamic forms, while working closely with cross-functional teams to deliver maintainable software.",
+    "tags": [
+      "Frontend Architecture",
+      "Enterprise SaaS",
+      "Performance Optimization",
+      "Data Visualization",
+      "Large-scale Forms"
+    ]
+  },
+  "experience": {
+    "eyebrow": "Career",
+    "title": "Experience",
+    "description": "Where I've worked and what I've shipped.",
+    "present": "Present",
+    "companyTagline": "Logistics & SaaS Solutions",
+    "usersLabel": "internal users",
+    "recordsLabel": "records handled",
+    "tms-container": {
+      "title": "Apollogix TMS Container",
+      "subtitle": "Enterprise Transport Management System",
+      "achievements": [
+        "Designed a transportation timeline view that displayed daily trips with minute-level accuracy, helping operators track drivers, containers, vehicles, routes, and idle time in one screen.",
+        "Built the timeline using AG Grid features such as pinned columns, custom cell renderers, column groups, column spans, and value getters.",
+        "Developed transport job forms with 50+ dynamic fields using React Hook Form and Yup.",
+        "Implemented AG Grid tables handling more than 15,000 routing records with infinite scrolling, server-side filtering, pagination, and Excel export.",
+        "Managed server state with TanStack Query using caching, query persistence, infinite queries, and mutation invalidation."
+      ]
+    },
+    "fms": {
+      "title": "Apollogix FMS",
+      "subtitle": "Freight Forwarding & Cost Control Platform",
+      "achievements": [
+        "Developed logistics features used by more than 200 internal users and handling over 15,000 freight charge records.",
+        "Improved page responsiveness by reducing unnecessary re-renders and optimizing data fetching.",
+        "Built shipment and consolidation forms with 70+ fields and complex validation logic.",
+        "Developed editable AG Grid tables for large-scale logistics operations."
+      ]
+    },
+    "workspace": {
+      "title": "Apollogix Workspace",
+      "subtitle": "B2B Multi-Tenant SaaS Platform",
+      "achievements": [
+        "Built the frontend platform from project setup to production using Next.js.",
+        "Implemented multi-tenant authentication, workspace management, and vendor management.",
+        "Configured Docker and GitHub Actions for deployment and release workflows."
+      ]
+    }
+  },
+  "skills": {
+    "eyebrow": "Toolbox",
+    "title": "Skills",
+    "description": "Technologies and practices I use to ship maintainable software.",
+    "categories": {
+      "frontend": "Frontend Development",
+      "ui-engineering": "UI Engineering",
+      "data": "Data-intensive Applications",
+      "tooling": "Development Tooling",
+      "professional": "Professional"
+    }
+  },
+  "education": {
+    "eyebrow": "Background",
+    "title": "Education",
+    "degree": {
+      "bachelorComputerEngineering": "Bachelor of Computer Engineering"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Let's work together",
+    "description": "I'm open to new opportunities and interesting projects. Feel free to reach out.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "copyEmail": "Copy email address",
+    "emailCopied": "Copied to clipboard!",
+    "ctaPrimary": "Say hello"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, Tailwind CSS & Radix UI"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}
