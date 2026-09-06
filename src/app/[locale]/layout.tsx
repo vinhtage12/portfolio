@@ -14,6 +14,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import "@app/globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const OG_LOCALE: Record<string, string> = { en: "en_US", vi: "vi_VN" };
 
@@ -136,6 +137,7 @@ export default async function LocaleLayout({
           </ThemeProvider>
         </NextIntlClientProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
